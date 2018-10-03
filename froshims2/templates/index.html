@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<h1>Register for Frosh IMs</h1>
+<form action="/register" method="post">
+    <input name="name" placeholder="Name" type="text" />
+    <select name="dorm">
+        <option disabled selected value="">Dorm</option>
+        <option value="Griffendor">Griffendor</option>
+        <option value="Wubbalubbadubdub">Wubbalubbadubdub</option>
+        <option value="Kings Landing">Kings Landing</option>
+        <option value="Cranbury">Cranbury</option>
+        <option value="Wall">Wall</option>
+    </select>
+    <input type="submit" value="Register"/>
+</form>
+{% endblock %}
